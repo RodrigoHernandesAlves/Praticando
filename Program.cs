@@ -1,40 +1,29 @@
 ﻿using System;
 
-namespace Vetores
+namespace Exercicio_de_orientacao_a_objetos_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[] myInts = { 5,10, 15};
-            bool[] [] myBools = new bool[2][];
+            Receita chocolate = new Receita(); // estancia receita
+            chocolate.peso = 1.9m;
+            chocolate.tamanho = "Grande";
+            chocolate.preco = 35.00m;
+            chocolate.Nome= "Bolo de chocolate";
 
-            myBools[0] = new bool [2];
-            myBools[1] = new bool[1];
+            Receita morango = new Receita();
+            morango.peso = 1.5m;
+            morango.tamanho = "Medio";
+            morango.preco = 25.00m;
+            morango.Nome = "Bolo de morango";
 
-            double[,] myDoubles = new double[2,2];
-            string[] myStrings = new string[3];
+            Receita abacaxi = new Receita();
+            abacaxi.peso = 1.2m;
+            abacaxi.tamanho = "Pequeno";
+            abacaxi.preco = 15.00m;
+            abacaxi.Nome = "Bolo de abacaxi";
 
-            Console.WriteLine("myInts[0]:  {0}, myInts[1]: {1}, myInts[2]: {2}", myInts[0], myInts[1], myInts[2]);
-
-            myBools[0] [0] =true;
-            myBools[0] [1]=false;
-            myBools[1][0]=true;
-
-            Console.WriteLine("myBools[0] [0]:  {0}, myBools[1] [0]: {1}", myBools[0] [0], myBools[1] [0]);   
-
-            myDoubles[0, 0]=3.147;
-            myDoubles[0, 1]=7.157;
-            myDoubles[1, 1]=2.117;
-            myDoubles[1, 0]=56.00138917;
-
-            Console.WriteLine("myDoubles[0, 0]:  {0}, myDoubles[1, 0]: {1}", myDoubles[0, 0], myDoubles[1, 0]); 
-
-            myStrings[0] = "Joe";
-            myStrings[1] = "Matt";
-            myStrings[2]="Robert";
-
-            Console.WriteLine("myStrings[0]: {0},myStrings[1]: {1},myStrings[2]: {2}",myStrings[0],myStrings[1],myStrings[2]);
         }
     }
 }
